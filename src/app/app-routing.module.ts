@@ -63,15 +63,11 @@ const routes: Routes = [
     // }
 ];
 
-// Use hash in location routes, for hosting on heroku
-const routeSettings = {
-    useHash: true
-};
 
 @NgModule({
     imports: [
         CommonModule,
-        RouterModule.forRoot(routes, routeSettings)
+        RouterModule.forRoot(routes)
     ],
     declarations: [],
     exports: [RouterModule]
